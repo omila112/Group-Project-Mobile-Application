@@ -10,12 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Tab("home", systemImage: "house") {
-                Text("Hello")
+            Tab( Constants.home, systemImage: Constants.homeicon) {
+                Text(Constants.home)
             }
-            Tab("Favourites", systemImage: "star") {
-                Text("Fav")
+            Tab(Constants.search, systemImage: Constants.searchicon) {
+                Text(Constants.search)
             }
+            Tab(Constants.fav, systemImage: Constants.favicon) {
+                Text(Constants.fav)
+            }
+            
         }
         .padding()
     }
